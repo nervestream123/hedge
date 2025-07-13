@@ -1,7 +1,7 @@
-import { Flex, TextField, Button, Badge, Text } from '@radix-ui/themes';
+import { Flex, TextField, Badge, Text } from '@radix-ui/themes';
 import { CalendarIcon } from '@radix-ui/react-icons';
 
-function DateRange() {
+function HedgeDateRange() {
   return (
     <Flex width="100%" direction="column">
       <Flex width="100%" direction="row" className="mb-[5px]">
@@ -26,4 +26,4 @@ function DateRange() {
   );
 }
 
-export default DateRange;
+export default HedgeDateRange;

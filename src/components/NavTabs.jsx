@@ -1,11 +1,12 @@
 import { Flex, Tabs, Box, Text } from '@radix-ui/themes';
 import Company from './Company';
 import Hedge from './Hedge';
+import Backtest from './Backtest';
 
 function NavTabs() {
   return (
     <Flex width="100%" direction="column">
-      <Tabs.Root defaultValue="hedge">
+      <Tabs.Root defaultValue="backtest">
         <Tabs.List size="1">
           <Tabs.Trigger value="company">Company</Tabs.Trigger>
           <Tabs.Trigger value="hedge">Hedge Fund</Tabs.Trigger>
@@ -22,7 +23,7 @@ function NavTabs() {
           </Tabs.Content>
 
           <Tabs.Content value="backtest">
-            <Text size="1">Backtest</Text>
+            <Backtest></Backtest>
           </Tabs.Content>
         </Box>
       </Tabs.Root>

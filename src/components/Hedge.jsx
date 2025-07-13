@@ -1,10 +1,14 @@
 import { Flex, Table, Text } from '@radix-ui/themes';
 import strategists from "../data/strategists";
 import Log from './Log';
+import DateRange from './DateRange';
 
 function Hedge() {
   return (
     <Flex width="100%" direction="column" align="center" className="mb-[15px]">
+
+      <DateRange></DateRange>
+      
       <Flex id="table" direction="column" width="100%" className="mb-[15px] h-[165px] overflow-y-scroll">
         <Table.Root size="1">
           <Table.Header>

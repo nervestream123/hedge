@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { Flex } from '@radix-ui/themes'
 import './App.css'
 import Tokens from './components/Tokens';
+import Input from './components/Input';
+import InputLabel from './components/InputLabel';
 
 function App() {
   const containerRef = useRef(null);
@@ -28,6 +30,8 @@ function App() {
 
   return (
     <Flex className="mx-[10px]" direction="column" align="center" ref={containerRef}>
+      <InputLabel></InputLabel>
+      <Input></Input>
       <Tokens></Tokens>
     </Flex>
   )

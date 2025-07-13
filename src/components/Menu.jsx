@@ -4,7 +4,7 @@ import Hedge from './Hedge';
 
 function Menu() {
   return (
-    <Flex width="100%" direction="column" className="">
+    <Flex width="100%" direction="column">
       <Tabs.Root defaultValue="hedge">
         <Tabs.List size="1">
           <Tabs.Trigger value="company">Company</Tabs.Trigger>
@@ -26,7 +26,6 @@ function Menu() {
           </Tabs.Content>
         </Box>
       </Tabs.Root>
-
     </Flex>
   );
 }

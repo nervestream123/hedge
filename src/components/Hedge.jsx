@@ -1,10 +1,11 @@
 import { Flex, Table, Text } from '@radix-ui/themes';
 import strategists from "../data/strategists";
+import Log from './Log';
 
 function Hedge() {
   return (
-    <Flex width="100%" direction="row" align="center" className="mb-[15px]">
-      <Flex direction="column" width="100%">
+    <Flex width="100%" direction="column" align="center" className="mb-[15px]">
+      <Flex id="table" direction="column" width="100%" className="mb-[15px] h-[165px] overflow-y-scroll">
         <Table.Root size="1">
           <Table.Header>
             <Table.Row>
@@ -40,6 +41,8 @@ function Hedge() {
           </Table.Body>
         </Table.Root>
       </Flex>
+
+      <Log></Log>
     </Flex>
   );
 }

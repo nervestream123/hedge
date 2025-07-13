@@ -7,7 +7,7 @@ let mainWindow; // <-- define it globally
 function createWindow() {
   mainWindow = new BrowserWindow({
     height: 40,
-    width: 500,
+    width: 600,
     titleBarStyle: 'hidden',
     titleBarOverlay: {
       color: '#090017',

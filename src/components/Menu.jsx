@@ -1,10 +1,11 @@
 import { Flex, Tabs, Box, Text } from '@radix-ui/themes';
 import Company from './Company';
+import Hedge from './Hedge';
 
 function Menu() {
   return (
     <Flex width="100%" direction="column" className="">
-      <Tabs.Root defaultValue="company">
+      <Tabs.Root defaultValue="hedge">
         <Tabs.List size="1">
           <Tabs.Trigger value="company">Company</Tabs.Trigger>
           <Tabs.Trigger value="hedge">Hedge Fund</Tabs.Trigger>
@@ -17,7 +18,7 @@ function Menu() {
           </Tabs.Content>
 
           <Tabs.Content value="hedge">
-            <Text size="1">Hedge Fund</Text>
+            <Hedge></Hedge>
           </Tabs.Content>
 
           <Tabs.Content value="backtest">

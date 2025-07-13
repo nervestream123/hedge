@@ -4,7 +4,7 @@ import './App.css'
 import Tokens from './components/Tokens';
 import Input from './components/Input';
 import InputLabel from './components/InputLabel';
-import Menu from './components/Menu';
+import NavTabs from './components/NavTabs';
 
 function App() {
   const containerRef = useRef(null);
@@ -33,7 +33,7 @@ function App() {
     <Flex className="mx-[10px]" direction="column" align="center" ref={containerRef}>
       <InputLabel></InputLabel>
       <Input></Input>
-      <Menu></Menu>
+      <NavTabs></NavTabs>
       <Tokens></Tokens>
     </Flex>
   )

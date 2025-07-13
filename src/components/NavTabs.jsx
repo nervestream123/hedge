@@ -2,7 +2,7 @@ import { Flex, Tabs, Box, Text } from '@radix-ui/themes';
 import Company from './Company';
 import Hedge from './Hedge';
 
-function Menu() {
+function NavTabs() {
   return (
     <Flex width="100%" direction="column">
       <Tabs.Root defaultValue="hedge">
@@ -30,4 +30,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default NavTabs;

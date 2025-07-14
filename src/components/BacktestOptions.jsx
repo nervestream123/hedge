@@ -13,7 +13,7 @@ function BacktestOptions() {
         <Text size="1" align="left" className="w-32 mr-[15px]!">End Date</Text>
       </Flex>
 
-      <Flex width="100%" direction="row" align="center" className="mb-[15px]">
+      <Flex width="100%" direction="row" align="center" className="mb-[10px]">
         <TextField.Root placeholder="10,000.00" size="1" className="w-32 mr-[15px]">
           <TextField.Slot>
             <RocketIcon height="10" width="10" />
@@ -56,7 +56,7 @@ function BacktestOptions() {
         </Select.Root>
         <Badge size="1" variant="surface" color="indigo" className="cursor-pointer ml-[15px]">Start Backtest</Badge>
       </Flex>
-      
+
     </Flex>
   );
 }

@@ -1,5 +1,4 @@
 import { Flex, Table, Text } from '@radix-ui/themes';
-import Log from './Log';
 import BacktestOptions from './BacktestOptions';
 
 function Backtest() {
@@ -42,7 +41,6 @@ function Backtest() {
         </Table.Root>
       </Flex>
 
-      <Log></Log>
     </Flex>
   );
 }

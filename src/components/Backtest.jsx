@@ -1,9 +1,12 @@
 import { Flex, Table, Text } from '@radix-ui/themes';
 import Log from './Log';
+import BacktestOptions from './BacktestOptions';
 
 function Backtest() {
   return (
     <Flex width="100%" direction="column" align="center" className="mb-[15px]">
+
+      <BacktestOptions></BacktestOptions>
 
       <Flex id="table" direction="column" width="100%" className="mb-[15px] h-[165px] overflow-y-scroll">
         <Table.Root size="1">
